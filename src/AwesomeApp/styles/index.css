@@ -12,3 +12,7 @@ button.active {
   background-color: #66C;
   color: #FEF;
 }
+
+.calendar-row {
+  padding: 10px 0;
+}
