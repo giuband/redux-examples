@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-const Day = ({ personDay, person, day, addDay, removeDay }) => {
-  const className = (personDay) ? 'active' : '';
-  const onClick = (personDay) ? removeDay : addDay;
+const Day = ({ isDaySelected, person, day, addDay, removeDay }) => {
+  const className = (isDaySelected) ? 'active' : '';
+  const onClick = (isDaySelected) ? removeDay : addDay;
   return (
-    <button key={personDay} className={className} onClick={() => onClick(person, day)}>
+    <button key={isDaySelected} className={className} onClick={() => onClick(person, day)}>
       {day}
     </button>
   );
@@ -15,7 +15,7 @@ const mapStateToProps = (state, ownProps) => {
   const { person, day } = ownProps;
   const key = `${person}-${day}`;
   return {
-    personDay: state.pickedDays[key],
+    isDaySelected: state.pickedDays[key],
   };
 };
 
@@ -27,7 +27,7 @@ const mapDispatchToProps = dispatch => ({
 Day.propTypes = {
   person: PropTypes.string,
   day: PropTypes.number,
-  personDay: PropTypes.bool,
+  isDaySelected: PropTypes.bool,
   addDay: PropTypes.func,
   removeDay: PropTypes.func,
 };
