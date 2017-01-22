@@ -26,6 +26,10 @@ app.get('/good', (req, res) => {
   res.sendFile(path.join(__dirname, '/index-good.html'));
 });
 
+app.get('/good-alt', (req, res) => {
+  res.sendFile(path.join(__dirname, '/index-good.html'));
+});
+
 app.get('/awesome', (req, res) => {
   res.sendFile(path.join(__dirname, '/index-awesome.html'));
 });

@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     'bad-app': './src/BadApp/index',
     'good-app': './src/GoodApp/index',
+    'good-alt-app': './src/GoodAppAlt/index',
     'awesome-app': './src/AwesomeApp/index',
   },
   output: {

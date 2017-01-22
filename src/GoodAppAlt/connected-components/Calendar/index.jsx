@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import CalendarRow from '../../components/CalendarRow';
+import CalendarRow from '../CalendarRow';
 
 const Calendar = ({ people }) => {
   console.log('%c[RENDER] Entire calendar page', 'color: #2AA');
