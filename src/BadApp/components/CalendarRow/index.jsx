@@ -4,7 +4,7 @@ import DayPicker from '../DayPicker';
 const CalendarRow = ({ person, pickedDays, addDay, removeDay }) => {
   console.log(`%c[RENDER] Row for person ${person}`, 'color: #A7B');
   return (
-    <div>
+    <div className="calendar-row">
       {person}:
       <DayPicker pickedDays={pickedDays} addDay={addDay} removeDay={removeDay} person={person} />
     </div>

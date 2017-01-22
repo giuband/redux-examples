@@ -4,7 +4,7 @@ import DayPicker from '../../connected-components/DayPicker';
 const CalendarRow = ({ person }) => {
   console.log(`%c[RENDER] Row for person ${person}`, 'color: #A7B');
   return (
-    <div>
+    <div className="calendar-row">
       {person}:
       <DayPicker person={person} />
     </div>
