@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Day from '../Day';
 
 const DayPicker = ({ days, person }) => (
-  <div>
+  <div className="calendar-row__day-picker">
     {days.map(day => <Day key={`${person}-${day}`} day={day} person={person} />)}
   </div>
 );

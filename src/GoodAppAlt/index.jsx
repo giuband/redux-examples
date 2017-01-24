@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import Calendar from './connected-components/Calendar';
 import configureStore from './store';
-import './styles/index.css';
+import '../index.css';
 
 const store = configureStore();
 

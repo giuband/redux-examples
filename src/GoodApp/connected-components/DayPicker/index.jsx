@@ -6,7 +6,7 @@ const DayPicker = ({ pickedDays, person, addDay, removeDay }) => {
   const allDays = [...Array(daysInMonth).keys()].map(i => i + 1);
   console.log(`%c[RENDER] Entire daypicker for ${person}`, 'color: #5AF');
   return (
-    <div>
+    <div className="calendar-row__day-picker">
       {allDays.map((day) => {
         const isDaySelected = pickedDays.includes(day);
         const onClick = (isDaySelected) ? removeDay : addDay;

@@ -5,7 +5,7 @@ const CalendarRow = ({ person }) => {
   console.log(`%c[RENDER] Row for person ${person}`, 'color: #A7B');
   return (
     <div className="calendar-row">
-      {person}:
+      <div className="calendar-row__person">{person}:</div>
       <DayPicker person={person} />
     </div>
   );

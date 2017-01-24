@@ -4,7 +4,7 @@ const DayPicker = ({ pickedDays, person, addDay, removeDay }) => {
   const daysInMonth = 30;
   const allDays = [...Array(daysInMonth).keys()].map(i => i + 1);
   return (
-    <div>
+    <div className="calendar-row__day-picker">
       {allDays.map((day) => {
         const isDaySelected = pickedDays.includes(day);
         const onClick = (isDaySelected) ? removeDay : addDay;
